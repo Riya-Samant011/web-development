@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <input type="number" id="first" placeholder="First Num">
+    <br>
+
+    <input type="number" id="second" placeholder="Second Num">
+    <br>
+
+    <button onclick="addition()">Addition</button>
+    <button onclick="subtraction()">subtract</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="divide()">divide</button>
+    <div id="answer"></div>
+
+    <script>
+        function addition() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let sum = Number.parseFloat(first) + Number.parseFloat(second)
+            let answer = document.getElementById("answer").innerHTML = Number.parseFloat(sum)
+        }
+        function subtraction() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let sum = Number.parseFloat(first) - Number.parseFloat(second)
+            let answer = document.getElementById("answer").innerHTML = Number.parseFloat(sum)
+        }
+        function multiply() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let sum = Number.parseFloat(first) * Number.parseFloat(second)
+            let answer = document.getElementById("answer").innerHTML = Number.parseFloat(sum)
+        }
+        function divide() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let sum = Number.parseFloat(first) / Number.parseFloat(second)
+            let answer = document.getElementById("answer").innerHTML = Number.parseFloat(sum)
+        }
+    </script>
+
+
+</body>
+
+</html>

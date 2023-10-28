@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Revision </title>
+    </head>
+    <body>
+        <div id="dabbe1">Shailu</div>
+        <div id="dabbe2">Mayank</div>
+        <div id="dabbe3">Niranjan</div>
+        <div id="dabbe4">Kailash</div>
+        <button onclick="change()">Click Here</button>
+        
+    </body>
+    <script>
+        function change(){
+            let dabba=document.getElementsByTagName("div")
+            // dabba[2].innerHTML="Bhavesh"
+            for(i=0;i<dabba.length;i++){
+            dabba[i].innerHTML="Neel"
+            dabba[i].style.color="red"
+            }
+        }
+    </script>
+</html>

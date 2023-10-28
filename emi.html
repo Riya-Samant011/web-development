@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Software</title>
+</head>
+<body>
+    <h1>FD Investment</h1>
+    <label for="">Enter the Principal Amount</label>
+    <input type="number" name="" id="Principal"><br>
+
+    <label for="">Time in years</label>
+    <input type="number" name="" id="time" value=""><br>
+
+    <label for="">Select Bank</label>
+
+    <select onchange="interest()" id="bank" value="">
+        <option value="SBI" value="" id="">SBI</option>
+        <option value="PNB" value="" id="">PNB</option>
+        <option value="ICICI" value="" id="">ICICI</option>
+        <option value="BOB" value="" id="">BOB</option>
+    </select>
+
+    <h1>Your Rate of Interest is:</h1>
+    <h3 id="interest"></h3><br>
+    <h1>Total Amount:</h1>
+    <h3 id="amount"></h3><br>
+  
+</body>
+<script>
+    function interest() {
+        let p = document.getElementById("Principal")
+        let t = document.getElementById("time")
+        let o = document.getElementById("bank")
+        let i = document.getElementById("interest")
+        let a = document.getElementById("amount")
+        if (o.value=="SBI") {
+            let result = (p.value*t.value*7.5)/100;
+            i.innerHTML = result
+            let total = Number.parseFloat(p.value)+Number.parseFloat(result);
+            a.innerHTML = total;
+        }
+         if (o.value=="PNB") {
+            let result = (p.value*t.value*4.9)/100;
+            i.innerHTML = result
+            let total = Number.parseFloat(p.value)+Number.parseFloat(result);
+            a.innerHTML = total;
+
+            }
+             if (o.value=="ICICI") {
+                let result = (p.value*t.value*8.5)/100;
+            i.innerHTML = result
+            let total = Number.parseFloat(p.value)+Number.parseFloat(result);
+            a.innerHTML = total;
+
+            }
+            if (o.value=="BOB") {
+                let result = (p.value*t.value*6.5)/100;
+            i.innerHTML = result
+            let total = Number.parseFloat(p.value)+Number.parseFloat(result);
+            a.innerHTML = total;
+
+            }
+        }
+
+    </script>
+</html>

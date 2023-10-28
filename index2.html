@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            height: 400px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button id="mybutton">
+        Click
+    </button>
+
+    <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, similique. Corrupti, quibusdam
+        molestiae! Veniam sit ipsa, totam voluptatum vero, consequuntur sequi veritatis ad eligendi mollitia cum
+        excepturi assumenda, amet quod. </p>
+        <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta labore cumque! Repellat rerum pariatur consequuntur, optio eius saepe voluptas esse qui at, explicabo earum! Atque in id a facilis? </p>
+</body>
+<script>
+    const hello = document.getElementsByClassName("para")
+    hello.addEventListener('mouseover', function () {
+       hello.innerHTML = "Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World"
+       hello.style.background="Aqua"
+
+
+    })
+    console.log(hello)
+</script>
+
+</html>

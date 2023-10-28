@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convertor</title>
+    </head>
+    <body>
+        <h1>Convertor</h1>
+        <h1>Rupee</h1>
+        <input type="number" id="rupee">
+    <select id="selectedValue" onchange="answer()">
+        <option value="Dollar">Dollar</option>
+        <option value="Rubble">Rubble</option>
+        <option value="yen">yen</option>
+        <option value="japan">Japan</option>
+        <option value="Euro">Euro</option>
+        <option value="Nepali">Nepali Ruppee</option>
+    </select>
+    <h1 id="currency"></h1>
+    <div id="answer"></div>
+    <script>
+        function answer(){
+        let s=document.getElementById("selectedValue").value;
+        if(s=="Dollar"){
+            let rupee=document.getElementById("rupee").value;
+            
+            let d=parseFloat(rupee)/80;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        else if(s=="Rubble"){
+            let rupee=document.getElementById("rupee").value;
+            
+            let d=parseFloat(rupee)/91;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        else if(s=="yuan"){
+            let rupee=document.getElementById("rupee").value;
+            console.log(rupee)
+            let d=parseFloat(rupee)/0.56;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        else if(s=="yen"){
+            let rupee=document.getElementById("rupee").value;
+            console.log(rupee)
+            let d=parseFloat(rupee)/150;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        else if(s=="Euro"){
+            let rupee=document.getElementById("rupee").value;
+            console.log(rupee)
+            let d=parseFloat(rupee)/120;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        else if(s=="Nepali"){
+            let rupee=document.getElementById("rupee").value;
+            console.log(rupee)
+            let d=parseFloat(rupee)/0.80;
+            document.getElementById("currency").innerHTML=s;
+            document.getElementById("answer").innerHTML=d;
+        }
+        }
+    </script>
+    </body>
+</html>

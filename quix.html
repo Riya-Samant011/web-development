@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet"> -->
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">  
+            <div class="col">
+                <h1 id="questionBox">This is Question</h1>
+
+            </div>
+            <div class="col box">=
+                <input type="radio" name="option" id="first" value="a" required>
+                <label for="first">Option 1</label>
+            </div>
+            <div class="col box">
+                <input type="radio" name="option" id="second" value="b" required>
+                <label for="second">Option 2</label>
+            </div>
+            <div class="col box">
+                <input type="radio" name="option" id="third" value="c" required>
+                <label for="third">Option 3</label>
+            </div>
+            <div class="col box">
+                <input type="radio" name="option" id="fourth" value="d" required>
+                <label for="fourth">Option 4</label>
+            </div>
+            <button id="submit" type="submit" onclick="submitQuiz()">Submit</button>
+        </div>
+
+    </section>
+    <script src="./quiz.js"></script>
+</body>
+
+</html>

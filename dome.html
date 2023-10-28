@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dom</title>
+    <style>
+
+    </style>
+</head>
+
+<Body>
+    <!-- <h1 id="heading">Hi this is JS Dom</h1>
+    <button onmousemove="change()">Click here</button> -->
+
+    <button onclick="bulb_on()">Click Here to Turn on light</button>
+    <img id="bulb" src="./pic_bulboff.gif" alt="">
+    <button onclick="bulb_off()">Click Here to Turn off light</button>
+    <h1 id="heading"></h1>
+    <script>
+        function bulb_on() {
+            let bulb = document.getElementById("bulb")
+            let heading = document.getElementById("heading")
+            heading.innerHTML = "Bulb is on"
+            bulb.src = "./pic_bulbon.gif"
+            element.style.border = "yellow"
+
+
+        } function bulb_off() {
+            let bulb = document.getElementById("bulb")
+            let heading = document.getElementById("heading")
+            heading.innerHTML = "Bulb is off"
+            bulb.src = "./pic_bulboff.gif"
+            element.style.border = "1px solid black"
+
+        }
+        // function change() {
+        //     let element = document.getElementById("heading")
+        //     element.innerHTML = "Good Evening"
+        //     element.style.color = "Blue"
+        // }
+    </script>
+
+</Body>
+
+</html>

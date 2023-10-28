@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dom</title>
+</head>
+
+<body>
+    <h1>Priyanshu is a boy</h1>
+    <h1>Neel is a <span>boy</span> </h1>
+    <div class="parent">
+    <div class="web">Hello Rahul</div>
+    <div class="web">Hello Manoj</div>
+    <div class="web">Hello Suresh</div>
+    <div class="web">Hello Kailash</div>
+</div>
+
+    <button onclick="change()">Click here</button>
+
+</body>
+<script>
+    function change() {
+        let heading=document.createElement("div")
+        let text=document.createTextNode("Hello Saurav") 
+        heading.appendChild(text)
+        let parent=document.querySelector(".parent")
+        parent.appendChild(heading)
+
+
+        // let t = document.querySelectorAll("span")
+        // t[0].innerHTML="girl"
+        // console.log(t)
+        // for (i = 0; i < t.length; i++) {
+        //     t[i].innerHTML = "hi"
+        // }
+     }
+</script>
+<!-- methods through we can target elements -->
+<!-- get element through id
+    get element through class
+    get element through tag name
+    get element through query selector -->
+
+</html>
